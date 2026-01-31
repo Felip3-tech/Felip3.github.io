@@ -1,0 +1,44 @@
+.vertical-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: 'Times New Roman', serif;; /* Cambia la fuente aquí */
+    font-size: 24px; /* Cambia el tamaño de la fuente aquí */
+}
+
+.vertical-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+    font-family: 'Times New Roman', serif;; /* Cambia la fuente aquí */
+    font-size: 24px; /* Cambia el tamaño de la fuente aquí */
+}
+
+/* Contenido del lado izquierdo */
+.vertical-row span:first-child {
+    width: 150px;
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #483D8B;
+    font-family: 'Times New Roman', serif; /* Cambia la fuente aquí */
+    font-size: 24px; /* Cambia el tamaño de la fuente aquí */
+}
+/* Contenido del lado derecho */
+.vertical-row span:last-child {
+    flex-grow: 1;
+    color: #FFD700;
+    font-family: 'Times New Roman', serif; /* Cambia la fuente aquí */
+    font-size: 24px; /* Cambia el tamaño de la fuente aquí */
+}
+
+/* Ocultar los bordes */
+.vertical-table,
+.vertical-row,
+.vertical-row span {
+    border: none;
+}

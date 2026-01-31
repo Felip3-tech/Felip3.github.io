@@ -1,0 +1,35 @@
+body {
+    background-image: url('../Recursos_Graficos/img9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+  color: #00FF00;
+  font-family: 'Open Sans';
+  text-align: center;
+}
+h2 {
+
+  color: #00FFFF; 
+  font-family: 'Libre Baskerville';
+  text-align: center;
+  font-size: 32px;
+}
+
+p{
+/*  color: rgb(240, 255, 255); */
+    color: #FFFF00;
+  line-height: 2.0;
+  font-family: 'Merriweather';
+  font-size: 20px;
+  padding: 2em;  
+}
+
+

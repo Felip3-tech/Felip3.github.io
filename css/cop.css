@@ -1,0 +1,10 @@
+.footer-container {
+  position: relative;
+}
+
+p {
+  position: absolute;
+  right: 20px; /* Mueve el párrafo a la derecha */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%); /* Ajusta la posición vertical */
+}

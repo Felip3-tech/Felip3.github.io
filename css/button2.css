@@ -1,0 +1,23 @@
+header {
+  text-align: right; /* Centra los elementos dentro del header */
+  margin-bottom: 30px; /* Espacio inferior opcional */
+}
+
+input[type="button"]{
+  background-color:#1E90FF; 
+	/* 	*/
+  /*  #5F9EA0  cadetblue */
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+input[type="button"]:hover {
+	background-color: #2628DD ;  /* Cambia el color al pasar el ratón */ 
+}

@@ -1,0 +1,27 @@
+font-family: Establece el tipo de fuente.
+
+color: Establece el color del texto.
+
+font-size: Establece el tamaño de la fuente.
+
+font-weight: Establece el grosor de la fuente (por ejemplo, bold, normal, lighter).
+
+font-style: Establece el estilo de la fuente (por ejemplo, italic, normal).
+
+text-align: Alinea el texto (por ejemplo, left, right, center, justify).
+
+line-height: Ajusta el espacio entre líneas.
+
+letter-spacing: Ajusta el espacio entre letras.
+
+word-spacing: Ajusta el espacio entre palabras.
+
+
+Urls de ayuda:
+
+https://www.cdmon.com/es/apps/tabla-colores
+
+
+
+
+
