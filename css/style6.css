@@ -1,0 +1,43 @@
+body {
+    background-image: url('../Recursos_Graficos/img18.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+  color: #FFFFFF;
+  font-family: 'Open Sans';
+  text-align: center;
+}
+h1 {
+
+  color: #00FFFF; 
+  font-family: 'Libre Baskerville';
+  text-align: center;
+  font-size: 32px;
+}
+
+p {
+  color: #FFD700;
+  line-height: 2.0;
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 0 auto; /* Centra el bloque en el ancho de la página */
+  max-width: 800px; /* Limita el ancho para mejor legibilidad */
+  padding: 20px;
+}
+
+/* Contenedor para centrar verticalmente */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
