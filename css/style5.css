@@ -62,6 +62,10 @@ h3:hover {
   transform: perspective(500px) rotateX(0deg) scale(1.05);
 }
 
+mark {
+  background-color: red;
+  color: white;
+}
 
 p {
   color:#FFFFFF;
