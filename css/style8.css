@@ -1,0 +1,144 @@
+:root {
+    --neon-green: #ffff00;
+}
+body {
+    background: linear-gradient(rgba(10, 12, 18, 0.85), rgba(10, 12, 18, 0.85)), 
+                url('../Recursos_Graficos/img7.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Courier New', monospace;
+    color: #58a6ff; 
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    /* CAMBIO: El nombre ahora coincide exactamente con el de abajo */
+    animation: parpadeo 3s infinite; 
+}
+
+@keyframes parpadeo {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+    20%, 24%, 55% { opacity: 0; }
+}
+
+h2 {
+    color: #58a6ff; /* Azul para subtítulos */
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p{
+    color: #e6edf3; /* Un blanco azulado (estilo GitHub) */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+.foto-perfil {
+    width: 220px;
+    height: 280px;
+    border-radius: 50%; /* Mantiene el óvalo */
+    border: 3px solid #e3b341;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(227, 179, 65, 0.2);
+}
+
+.cert-block h2{
+    color: #ffff00;
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 25px
+}
+
+.img-diseno {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 8px; /* Bordes */
+    border: 1px solid #58a6ff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.img-certificado h2 {
+    color: #ffff00; /* Amarillo para el nombre del certificado */
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 25px; 
+}
+
+.skill-card ul li {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.skill-card {
+    background: rgba(13, 17, 23, 0.8); /* Fondo oscuro semi-transparente */
+    backdrop-filter: blur(10px);      /* Efecto de desenfoque */
+    border: 1px solid #30363d;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    color: #ffff00; /* Se cambia a amarillo para que combine con los botones */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} 
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+    /* Aumento de tamaño */
+    font-size: 1.4rem;    
+    padding: 20px 55px;  
+    
+    border: 2px solid var(--neon-green); /* Borde un poco más grueso */
+    border-radius: 50px;
+    transition: all 0.3s;
+    background: rgba(0, 255, 136, 0.05);
+    display: inline-block; /* Se aplica el Padding */
+}
+
+.nav-link:hover {
+    background: var(--neon-green);
+    color: #000;
+    box-shadow: 0 0 20px var(--neon-green);
+    transform: translateY(-3px);
+}
+
+
+footer{
+    text-align: center;
+    padding: 40px;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
+    margin-top: 50px;
+}
