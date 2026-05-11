@@ -21,7 +21,7 @@
     }
 
     p {
-        font-size: 1rem; /* Texto más cómodo para leer en mano */
+        font-size: 1rem; /* Texto para poder leer en 1 mano */
         text-align: left; /* En celular es mejor alinear a la izquierda */
     }
 
