@@ -1,23 +1,33 @@
 header {
-  text-align: right; /* Centra los elementos dentro del header */
-  margin-bottom: 30px; /* Espacio inferior opcional */
+  text-align: center; /* Centrado para que se vea más equilibrado en el inicio */
+  padding: 40px 0;
+  margin-bottom: 20px;
 }
 
 input[type="button"]{
-  background-color:#666; 
-	/* 	*/
-  /*  #5F9EA0  cadetblue */
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
+  /* TAMAÑO Y ESPACIO */
+  font-size: 24px;            /* Letra más grande */
+  padding: 18px 50px;         /* Mucho más cuerpo (arriba/abajo y lados) */
+  min-width: 180px;           /* Todos los elementos tengan un ancho similar */
+  margin: 10px;               /* Espacio entre botones */
+  
+  /* ESTILO PROFESIONAL */
+  background-color: transparent; 
+  color: #ffff00;             /* Color amarillo */
+  border: 2px solid #ffff00;  /* Borde amarillo */
+  border-radius: 50px;        /* Bordes redondeados*/
+  
+  /* INTERACCIÓN */
   cursor: pointer;
-  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;  /* Animación suave al pasar el mouse */
+  text-transform: uppercase;  /* Letras mayúsculas para más impacto */
 }
 
 input[type="button"]:hover {
-	background-color: #2628DD ;  /* Cambia el color al pasar el ratón */ 
+  background-color: #00ff88;  /* Se rellena de verde */
+  color: #000;                /* La letra cambia a negro para contraste */
+  box-shadow: 0 0 20px rgba(255, 255, 0, 0.6); /* Efecto de brillo */
+  transform: translateY(-3px); /* El botón "salta" un poquito */
 }
