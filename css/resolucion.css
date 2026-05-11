@@ -1,0 +1,31 @@
+/* --- AJUSTES PARA CELULARES (Pantallas pequeñas) --- */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column; /* Los botones se ponen uno debajo del otro */
+        align-items: center;
+        gap: 10px;
+    }
+
+    input[type="button"] {
+        width: 100%; /* Los botones ocupan todo el ancho del celular */
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem; /* Texto más cómodo para leer en mano */
+        text-align: left; /* En celular es mejor alinear a la izquierda */
+    }
+
+    .image-wrapper img {
+        max-width: 100%; /* La imagen nunca se sale de la pantalla */
+    }
+}
