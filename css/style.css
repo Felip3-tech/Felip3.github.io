@@ -1,35 +1,147 @@
+:root {
+    --neon-green: #00ff88;
+    --neon-blue: #00d9ff;
+    --bg-dark: rgba(10, 12, 18, 0.85);
+}
+
 body {
-    background-image: url('../Recursos_Graficos/img9.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #000;
-    min-height: 100vh;
+    background-color: #0d1117; 
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #c9d1d9; 
+    line-height: 1.8; /* Aumenté un poco el espacio entre líneas para lectura fácil */
+    font-size: 18px;  /* <--- Antes era 16px por defecto, ahora es más grande */
+}
+
+/* Contenedor Efecto Cristal */
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+    /*
+    background: #161b22; /* Un gris un poco más claro que el fondo para dar profundidad */
+   /* border: 1px solid #30363d;
+    border-radius: 12px;
+    */
 }
 
 h1 {
-  color: #00FF00;
-  font-family: 'Open Sans';
-  text-align: center;
+    font-family: 'Courier New', monospace;
+    color: #58a6ff; 
+    text-align: center;
+    font-size: 3.5rem; /* <--- Subió de 2.5 a 3.5 para impacto visual */
+    margin-bottom: 30px;
 }
+
 h2 {
-
-  color: #00FFFF; 
-  font-family: 'Libre Baskerville';
-  text-align: center;
-  font-size: 32px;
+    color: #58a6ff;
+    font-size: 2.2rem; /* <--- Subió de 1.5 a 2.2 */
+    margin-top: 40px;
+}
+p {
+    font-size: 1.2rem; /* <--- Esto hace que los párrafos de texto sean muy legibles */
+    margin-bottom: 30px;
+    text-align: justify;
 }
 
-p{
-/*  color: rgb(240, 255, 255); */
-    color: #FFFF00;
-  line-height: 2.0;
-  font-family: 'Merriweather';
-  font-size: 20px;
-  padding: 2em;  
+/* Animación para la imagen */
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 30px auto;
+    opacity: 0.9; /* Un poco de transparencia para que se mezcle con el diseño */
 }
 
+.image-wrapper img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.4);
+}
 
+/* Estilo de los "Botones" de navegación */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+    /* Aumento de tamaño */
+    font-size: 1.4rem;    /* <--- Añadimos esto para que la letra del botón sea grande */
+    padding: 20px 55px;   /* <--- Aumenté el segundo número (lados) para que sean más anchos */
+    
+    border: 2px solid var(--neon-green); /* Borde un poco más grueso */
+    border-radius: 50px;
+    transition: all 0.3s;
+    background: rgba(0, 255, 136, 0.05);
+    display: inline-block; /* Asegura que el padding se aplique correctamente */
+}
+
+.nav-link:hover {
+    background: var(--neon-green);
+    color: #000;
+    box-shadow: 0 0 20px var(--neon-green);
+    transform: translateY(-3px);
+}
+
+/* Resaltado de texto importante */
+strong {
+   /* color: var(--neon-green);
+   */
+   color: #ffff00;
+  font-weight: bold;
+}
+
+.resaltado-neon {
+    color: #00ff88;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 90%; /* El contenido ocupa más ancho en pantallas pequeñas */
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2.5rem !important; /* Título un poco más pequeño */
+    }
+}
+
+/* --- AJUSTES PARA CELULARES (Pantallas pequeñas) --- */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column; /* Los botones se ponen uno debajo del otro */
+        align-items: center;
+        gap: 10px;
+    }
+
+    input[type="button"] {
+        width: 100%; /* Los botones ocupan todo el ancho del celular */
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem; /* Texto más cómodo para leer en mano */
+        text-align: left; /* En celular es mejor alinear a la izquierda */
+    }
+
+    .image-wrapper img {
+        max-width: 100%; /* La imagen nunca se sale de la pantalla */
+    }
+}
