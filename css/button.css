@@ -8,10 +8,10 @@ input[type="button"]{
   /* TAMAÑO Y ESPACIO */
   font-size: 24px;            /* Letra más grande */
   padding: 18px 50px;         /* Cuerpo (arriba/abajo y lados) */
-  min-width: 180px;           /* Todos los elementos tengan un ancho similar */
+  min-width: 180px;           /* Los elementos tengan un ancho similar */
   margin: 10px;               /* Espacio entre botones */
   
-  /* ESTILO PROFESIONAL */
+/* ESTILO */
   background-color: transparent; 
   color: #ffff00;             /* Color amarillo */
   border: 2px solid #ffff00;  /* Borde amarillo */
@@ -29,5 +29,5 @@ input[type="button"]:hover {
   background-color: #00ff88;  /* Se rellena de verde */
   color: #000;                /* La letra cambia a negro para contraste */
   box-shadow: 0 0 20px rgba(255, 255, 0, 0.6); /* Efecto de brillo */
-  transform: translateY(-3px); /* animación del boton  */
+  transform: translateY(-3px); /* Animación del botón */
 }
