@@ -1,19 +1,22 @@
 body {
-    background-image: url('../Recursos_Graficos/img15.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('../Recursos_Graficos/img21.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: #000;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
 }
 
 h1 {
-  color: #00FF00;
-  font-family: 'Open Sans';
-  text-align: center;
+    color: #ffff00; /* Amarillo*/
+    font-family: 'Courier New', monospace;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
 }
 h2 {
 
@@ -24,12 +27,44 @@ h2 {
 }
 
 p{
-/*  color: rgb(240, 255, 255); */
-  color: #000000;
-  line-height: 2.0;
-  font-family: 'Merriweather';
-  font-size: 26px;
-  padding: 2em; 
+    color: #e6edf3; /* Blanco para la lectura */
+    line-height: 1.8;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.2rem; /* Tamaño equilibrado */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    /* Fondo para separar el texto del fondo */
+    background: rgba(255, 255, 255, 0.03);
+    border-left: 4px solid #ffff00;
+    border-radius: 0 10px 10px 0;
 }
 
+.logo-container {
+    display: block;
+    margin: 0 auto 30px auto; /* Centra horizontalmente y da espacio */
+    text-align: center;
+}
 
+.logo-container img {
+    width: 100%;            /* Se adapta al contenedor */
+    max-width: 950px;     
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.02);
+}
+
+footer p {
+    text-align: center;      /* Centra el texto horizontalmente */
+    border-left: none;       /* Quita la línea amarilla lateral */
+    border-right: none;      /* También quita la de la derecha */
+    background: transparent; /* Quita cualquier fondo gris que pueda haber */
+    padding: 20px 0;         /* Espacio arriba y abajo */
+    margin: 0 auto;          /* Asegura que el bloque esté centrado */
+    width: 100%;             /* Para ocupar todo el ancho para poder centrar el texto */
+    color: #8b949e;          /* Un gris suave */
+}
