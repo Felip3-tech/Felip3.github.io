@@ -1,62 +1,164 @@
+:root {
+    --neon-green: #ffff00; /* El amarillo que venimos usando */
+}
 body {
-    background-image: url('../Recursos_Graficos/img7.jpg');
+    background-color: #0d1117;
+    background-image: url('../Recursos_Graficos/img20.1.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #000;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #c9d1d9;
+    min-height: 100vh;
 }
 
 h1 {
-  color: #FFD700;
-  text-align: center;
+    font-family: 'Courier New', monospace;
+    color: #58a6ff; 
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    /* CAMBIO: El nombre ahora coincide exactamente con el de abajo */
+    animation: parpadeo 3s infinite; 
+}
+
+@keyframes parpadeo {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+    20%, 24%, 55% { opacity: 0; }
 }
 
 h2 {
-  color: #4169E1;
-  font-family: 'Libre Baskerville';
-  text-align: center;
-  font-size: 32px;
+    color: #58a6ff; /* Azul para subtítulos */
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
 }
 
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 p{
-/*  color: rgb(240, 255, 255); */
-  color: #00FFFF;
-  line-height: 2.0;
-  font-family: 'Merriweather';
-  font-size: 26px;
-  padding: 2em; 
+    color: #e6edf3; /* Un blanco azulado (estilo GitHub) */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    padding: 10px 0;
 }
 
 ul {
-    list-style-type: circle;
-    list-style-position: inside;
-    font-size: 26px;
-    font-family: 'Merriweather'; /* Cambia la fuente aquí */
-    color: #00FFFF; /* Cambia el color aquí */
+    color: #ffffff; /* Blanco para mejor claridad */
+    margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 
 ol {
-    list-style-type: decimal;
-    font-size: 26px;
-    font-family: 'Merriweather'; /* Cambia la fuente aquí */
-    color: #FFD700 /* Cambia el color aquí */
+    color: #e3b341; 
+    border-bottom: 1px solid #30363d; /* Una línea divisoria discreta*/
+    padding-bottom: 5px;
+    display: block;
 }
-/*
-<style>
-@keyframes colorchange {
-    0%   { background: #33FFF3; }
-    25%  { background: #78281F; }
-    50%  { background: #117A65; }
-    75%  { background: #DC7633; }
-    100% { background: #9B59B6; }
+img {
+    width: 220px;   /* Un poco más angosta */
+    height: 280px;  /* Un poco más alta */
+    border-radius: 50%; /* Esto hace el óvalo al tener medidas diferentes */
+    border: 3px solid #e3b341;
+    object-fit: cover; /* Evita que tu cara se estire */
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(227, 179, 65, 0.2);
 }
-body {
-    animation: colorchange 10s infinite;
+
+.skill-card ul li {
+    color: #ffffff;
+    margin-bottom: 5px;
 }
-</style>
-*/
+
+.skill-card {
+    background: rgba(13, 17, 23, 0.8); /* Fondo oscuro semi-transparente */
+    backdrop-filter: blur(10px);      /* Efecto de desenfoque */
+    border: 1px solid #30363d;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    color: #ffff00; /* Se cambia a amarillo para que combine con los botones */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+} 
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+    /* Aumento de tamaño */
+    font-size: 1.4rem;    /* <--- Añadimos esto para que la letra del botón sea grande */
+    padding: 20px 55px;   /* <--- Aumenté el segundo número (lados) para que sean más anchos */
+    
+    border: 2px solid var(--neon-green); /* Borde un poco más grueso */
+    border-radius: 50px;
+    transition: all 0.3s;
+    background: rgba(0, 255, 136, 0.05);
+    display: inline-block; /* Asegura que el padding se aplique correctamente */
+}
+
+.nav-link:hover {
+    background: var(--neon-green);
+    color: #000;
+    box-shadow: 0 0 20px var(--neon-green);
+    transform: translateY(-3px);
+}
+
+
+footer{
+    text-align: center;
+    padding: 40px;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
+    margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column; /* Los botones se ponen uno debajo del otro */
+        align-items: center;
+        gap: 10px;
+    }
+
+    input[type="button"] {
+        width: 100%; /* Los botones ocupan todo el ancho del celular */
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem; /* Texto más cómodo para leer en mano */
+        text-align: left; /* En celular es mejor alinear a la izquierda */
+    }
+
+    .image-wrapper img {
+        max-width: 100%; /* La imagen nunca se sale de la pantalla */
+    }
+}
