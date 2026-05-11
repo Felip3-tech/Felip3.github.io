@@ -1,89 +1,85 @@
 <!DOCTYPE html>
-
 <html lang="es">
-	<head>
-		 <link rel="stylesheet" href="css/style3.css">
-		 <link rel="stylesheet" href="css/button.css">
-		<link rel="stylesheet" href="css/nocopy.css">	
-		<link rel="stylesheet" href="css/table.css">
-			<title>Acerca</title>
-	</head>
-	<body>
-		<header>
-			  	<a href="index.html">
-					<input type="button" value="Inicio">
-			  	</a>
-			  	<a href="acerca.html">
-					<input type="button" value="Acerca">
-			 	</a>
-				<a href="proposito.html">
-					<input type="button" value="UPSLP">
-			 	</a>
-			 		<a href="https://github.com/Felip3-tech/Felip3.github.io">
-					<input type="button" value="GitHub">
-			 	</a>
-		</header>
-		<h1>Certificaciones </h1>
-		<div style="text-align: center;">
-		  	<img src="Recursos_Graficos/img2.jpg" alt="Descripción de la imagen">
-		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style8.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/nocopy.css">	
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/resolucion.css">
+    <title>Certificaciones | Felipe González</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><input type="button" value="Inicio"></a>
+        <a href="acerca.html"><input type="button" value="¿Quién soy?"></a>
+        <a href="proposito.html"><input type="button" value="UPSLP"></a>
+        <a href="https://github.com/Felip3-tech/Felip3.github.io.git" target="_blank">
+            <input type="button" value="GitHub">
+        </a>
+    </header>
 
+    <main class="container">
+        <h1>Mis Certificaciones</h1>
+	<img src="Recursos_Graficos/img2.jpg" class="foto-perfil" alt="Felipe González">
+        <!-- Tabla de Información Personal -->
+        <div class="vertical-table">
+            <div class="vertical-row">
+                <span class="label">Nombre:</span>
+                <span>Felipe De Jesús González Reyes</span>
+            </div>
+            <div class="vertical-row">
+                <span class="label">Carrera:</span>
+                <span>Ingeniería en Tecnologías de la Información</span>
+            </div>
+            <div class="vertical-row">
+                <span class="label">Materia:</span>
+                <span>Seguridad Informática (CNO V)</span>
+            </div>
+        </div>
 
-    <div class="vertical-table">
-	        <div class="vertical-row">
-	            <span>Nombre </span>
-	            <span>Felipe De Jesús González Reyes</span>
-	        </div>
-
-	        <div class="vertical-row">
-	            <span>Carrera</span>
-	            <span>Ingeniería en Tecnologías de la Información </span>
-	        </div>
-
-	        <div class="vertical-row">
-	            <span>Materia</span>
-	            <span>CNO V: Seguridad Informática</span>
-	        </div>
+        <section class="certificaciones-grid">
+    <!-- Certificado 1 -->
+    <div class="img-certificado">
+        <h2>Partner: PCAP - Python</h2>
+        <img src="Recursos_Graficos/Python_certificate.jpg" class="img-diseno" alt="Certificado Python">
     </div>
-		<p>
-				Cuento con las sigueintes Certificaciones:
-				<h1>Partner: PCAP - Programming Essentials in Python  </h1>
-				<div style="text-align: center;">
-		  			<img src="Recursos_Graficos/Python_certificate.jpg" alt="Descripción de la imagen">
-				</div>	
 
+    <!-- Certificado 2 -->
+    <div class="img-certificado">
+        <h2>C++ Certificate</h2>
+        <img src="Recursos_Graficos/C++_certificate.jpg" class="img-diseno" alt="Certificado C++">
+    </div>
 
-				<h1>C++_certificate </h1>
-				<div style="text-align: center;">
-		  			<img src="Recursos_Graficos/C++_certificate.jpg" alt="Descripción de la imagen">
-				</div>
+    <!-- Certificado 3 -->
+    <div class="img-certificado">
+        <h2>NDG Linux Essentials</h2>
+        <img src="Recursos_Graficos/NDG_Linux_Essentials_certificate.jpg" class="img-diseno" alt="Certificado Linux">
+    </div>
 
-				<h1>NDG_Linux </h1>
-				<div style="text-align: center;">
-		  			<img src="Recursos_Graficos/NDG_Linux_Essentials_certificate.jpg" alt="Descripción de la imagen">
-				</div>	
+    <!-- Certificado 4 -->
+    <div class="img-certificado">
+        <h2>Programming Essentials in C</h2>
+        <img src="Recursos_Graficos/C_certificate.jpg" class="img-diseno" alt="Certificado C">
+    </div>
 
-				<h1>Programming Essentials in C</h1>
-				<div style="text-align: center;">
-		  			<img src="Recursos_Graficos/C_certificate.jpg" alt="Descripción de la imagen">
-				</div>	
+    <!-- Certificado 5 -->
+    <div class="img-certificado">
+        <h2>IT Essentials</h2>
+        <img src="Recursos_Graficos/IT_Essentials_certificate.jpg" class="img-diseno" alt="Certificado IT">
+    </div>
+</section>
 
-				<h1>IT Essentials</h1>
-				<div style="text-align: center;">
-		  			<img src="Recursos_Graficos/IT_Essentials_certificate.jpg" alt="Descripción de la imagen">
-				</div>	
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="acerca.html"> <input type="button" value="Regresar"> </a>
+        </div>
+    </main>
 
+    <footer>
+        <p>&copy; <span id="current-year"></span> F.R. Todos los derechos reservados.</p>
+    </footer>
 
- 			<a href="acerca.html"> <input type="button" value="regresar"> </a>
-		<script src="../scripts/script.js"></script>
-
-			  <footer>
-			  	</a>
-		    <p>&copy; <span id="current-year"></span> F.R. Todos los derechos reservados.</p>
-  		<!--  <a href="/politica-de-privacidad">Política de Privacidad</a> -->
-  </footer>
-		
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
-
-
