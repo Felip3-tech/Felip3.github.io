@@ -1,147 +1,33 @@
-:root {
-    --neon-green: #00ff88;
-    --neon-blue: #00d9ff;
-    --bg-dark: rgba(10, 12, 18, 0.85);
+header {
+  text-align: center; /* Centrado para que se vea más equilibrado en el inicio */
+  padding: 40px 0;
+  margin-bottom: 20px;
 }
 
-body {
-    background-color: #0d1117; 
-    margin: 0;
-    font-family: 'Segoe UI', Roboto, sans-serif;
-    color: #c9d1d9; 
-    line-height: 1.8; /* Aumenté un poco el espacio entre líneas para lectura fácil */
-    font-size: 18px;  /* <--- Antes era 16px por defecto, ahora es más grande */
-}
-
-/* Contenedor Efecto Cristal */
-.container {
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 40px;
-    /*
-    background: #161b22; /* Un gris un poco más claro que el fondo para dar profundidad */
-   /* border: 1px solid #30363d;
-    border-radius: 12px;
-    */
-}
-
-h1 {
-    font-family: 'Courier New', monospace;
-    color: #58a6ff; 
-    text-align: center;
-    font-size: 3.5rem; /* <--- Subió de 2.5 a 3.5 para impacto visual */
-    margin-bottom: 30px;
-}
-
-h2 {
-    color: #58a6ff;
-    font-size: 2.2rem; /* <--- Subió de 1.5 a 2.2 */
-    margin-top: 40px;
-}
-p {
-    font-size: 1.2rem; /* <--- Esto hace que los párrafos de texto sean muy legibles */
-    margin-bottom: 30px;
-    text-align: justify;
-}
-
-/* Animación para la imagen */
-.image-wrapper img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto 30px auto;
-    opacity: 0.9; /* Un poco de transparencia para que se mezcle con el diseño */
-}
-
-.image-wrapper img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 30px rgba(0, 217, 255, 0.4);
-}
-
-/* Estilo de los "Botones" de navegación */
-.nav-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    
-    /* Aumento de tamaño */
-    font-size: 1.4rem;    /* <--- Añadimos esto para que la letra del botón sea grande */
-    padding: 20px 55px;   /* <--- Aumenté el segundo número (lados) para que sean más anchos */
-    
-    border: 2px solid var(--neon-green); /* Borde un poco más grueso */
-    border-radius: 50px;
-    transition: all 0.3s;
-    background: rgba(0, 255, 136, 0.05);
-    display: inline-block; /* Asegura que el padding se aplique correctamente */
-}
-
-.nav-link:hover {
-    background: var(--neon-green);
-    color: #000;
-    box-shadow: 0 0 20px var(--neon-green);
-    transform: translateY(-3px);
-}
-
-/* Resaltado de texto importante */
-strong {
-   /* color: var(--neon-green);
-   */
-   color: #ffff00;
+input[type="button"]{
+  /* TAMAÑO Y ESPACIO */
+  font-size: 24px;            /* Letra más grande */
+  padding: 18px 50px;         /* Cuerpo (arriba/abajo y lados) */
+  min-width: 180px;           /* Los elementos tengan un ancho similar */
+  margin: 10px;               /* Espacio entre botones */
+  
+/* ESTILO */
+  background-color: transparent; 
+  color: #ffff00;             /* Color amarillo */
+  border: 2px solid #ffff00;  /* Borde amarillo */
+  border-radius: 50px;        /* Bordes redondeados*/
+  
+  /* INTERACCIÓN */
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: bold;
+  transition: all 0.3s ease;  /* Animación suave al pasar el mouse */
+  text-transform: uppercase;  /* Letras mayúsculas para más impacto */
 }
 
-.resaltado-neon {
-    color: #00ff88;
-    font-weight: bold;
-    text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
-}
-
-@media (max-width: 992px) {
-    .container {
-        max-width: 90%; /* El contenido ocupa más ancho en pantallas pequeñas */
-        padding: 20px;
-    }
-    h1 {
-        font-size: 2.5rem !important; /* Título un poco más pequeño */
-    }
-}
-
-/* --- AJUSTES PARA CELULARES (Pantallas pequeñas) --- */
-@media (max-width: 600px) {
-    .nav-container {
-        flex-direction: column; /* Los botones se ponen uno debajo del otro */
-        align-items: center;
-        gap: 10px;
-    }
-
-    input[type="button"] {
-        width: 100%; /* Los botones ocupan todo el ancho del celular */
-        font-size: 18px;
-        padding: 12px 0;
-    }
-
-    h1 {
-        font-size: 2rem !important;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem; /* Texto más cómodo para leer en mano */
-        text-align: left; /* En celular es mejor alinear a la izquierda */
-    }
-
-    .image-wrapper img {
-        max-width: 100%; /* La imagen nunca se sale de la pantalla */
-    }
+input[type="button"]:hover {
+  background-color: #00ff88;  /* Se rellena de verde */
+  color: #000;                /* La letra cambia a negro para contraste */
+  box-shadow: 0 0 20px rgba(255, 255, 0, 0.6); /* Efecto de brillo */
+  transform: translateY(-3px); /* Animación del botón */
 }
