@@ -7,7 +7,7 @@ header {
 input[type="button"]{
   /* TAMAÑO Y ESPACIO */
   font-size: 24px;            /* Letra más grande */
-  padding: 18px 50px;         /* Mucho más cuerpo (arriba/abajo y lados) */
+  padding: 18px 50px;         /* Cuerpo (arriba/abajo y lados) */
   min-width: 180px;           /* Todos los elementos tengan un ancho similar */
   margin: 10px;               /* Espacio entre botones */
   
@@ -29,5 +29,5 @@ input[type="button"]:hover {
   background-color: #00ff88;  /* Se rellena de verde */
   color: #000;                /* La letra cambia a negro para contraste */
   box-shadow: 0 0 20px rgba(255, 255, 0, 0.6); /* Efecto de brillo */
-  transform: translateY(-3px); /* El botón "salta" un poquito */
+  transform: translateY(-3px); /* animación del boton  */
 }
