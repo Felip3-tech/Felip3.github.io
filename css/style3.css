@@ -25,6 +25,10 @@ h1 {
     animation: parpadeo 3s infinite; 
 }
 
+h1:hover {
+  text-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFFF00;
+}
+
 @keyframes parpadeo {
     0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
     20%, 24%, 55% { opacity: 0; }
@@ -130,35 +134,4 @@ footer{
     color: #8b949e;
     border-top: 1px solid #30363d;
     margin-top: 50px;
-}
-
-@media (max-width: 600px) {
-    .nav-container {
-        flex-direction: column; /* Los botones se ponen uno debajo del otro */
-        align-items: center;
-        gap: 10px;
-    }
-
-    input[type="button"] {
-        width: 100%; /* Los botones ocupan todo el ancho del celular */
-        font-size: 18px;
-        padding: 12px 0;
-    }
-
-    h1 {
-        font-size: 2rem !important;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem; /* Texto más cómodo para leer en mano */
-        text-align: left; /* En celular es mejor alinear a la izquierda */
-    }
-
-    .image-wrapper img {
-        max-width: 100%; /* La imagen nunca se sale de la pantalla */
-    }
 }
