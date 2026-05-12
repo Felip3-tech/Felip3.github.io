@@ -1,23 +1,47 @@
 header {
-  text-align: right; /* Centra los elementos dentro del header */
-  margin-bottom: 30px; /* Espacio inferior opcional */
+  text-align: right; 
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-input[type="button"]{
-  background-color:#1E90FF; 
-	/* 	*/
-  /*  #5F9EA0  cadetblue */
-  border: none;
-  color: black;
-  padding: 10px 20px;
+/* Estilo general para todos los botones de la página */
+input[type="button"] {
+  background-color: rgba(30, 144, 255, 0.2); /* Azul semi-transparente */
+  border: 2px solid #1E90FF;                /* Borde azul sólido */
+  color: #ffffff;                            /* Texto blanco para un mejor contraste */
+  padding: 12px 25px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  backdrop-filter: blur(5px);                /* Efecto de cristal */
 }
 
+/* Efecto para los botones de "Actividad" */
+a[href*="docs"] input[type="button"] {
+    width: 100%;    /* Hace que el botón ocupe el ancho de la imagen */
+    max-width: 300px;
+    margin-top: 10px;
+    border-color: #FFD700; /* Borde dorado para que combine con el texto */
+    color: #FFD700;
+}
+
+/* Animación de color */
 input[type="button"]:hover {
-	background-color: #2628DD ;  /* Cambia el color al pasar el ratón */ 
+  background-color: #1E90FF;
+  color: white;
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.5);
+  transform: translateY(-2px); /* Pequeño salto hacia arriba */
+}
+
+/* Para botones de actividad */
+a[href*="docs"] input[type="button"]:hover {
+    background-color: #FFD700;
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
 }
