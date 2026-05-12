@@ -1,5 +1,5 @@
 body {
-    background-image: url('../Recursos_Graficos/img26.jpg'); 
+    background-image: url('../Recursos_Graficos/img13.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,25 +11,14 @@ body {
 }
 
 h1 {
-  color: #FFD700;
+  color: #00FF41; /* Verde clásico de terminal */
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 10px;
-  border-radius: 5px;
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-h1 {
-  color: #FFFF00;
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  text-shadow: 0 0 5px #FFFF00, 0 0 10px #FFFF00, 0 0 15px #FFFF00;
-  padding: 10px;
-  border-radius: 5px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-weight: bold;
-  transition: text-shadow 0.3s ease;
+  text-transform: uppercase;
+  animation: iluminarVerde 2.5s ease-in-out infinite alternate;
 }
 
 h1:hover {
@@ -37,13 +26,14 @@ h1:hover {
 }
 
 h2 {
-  color: #FFD700; /* Amarillo dorado */
+  color: #FFD700; 
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra negra con opacidad baja */
-  background-color: #ab078d; /* Fondo  */
-  padding: 10px; /* Opcional: para dar espacio alrededor del texto */
-  border-radius: 5px; /* Opcional: bordes redondeados para mejor apariencia */
+  text-align: left; /* Cambiado a la izquierda para fluidez */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
 }
  
 h3 {
@@ -69,63 +59,98 @@ mark {
 
 p {
   color:#FFFFFF;
-  /* 
-  #00FF00
-  #FFD700
-  */
   line-height: 2.0;
   font-family: 'Merriweather', serif;
   font-size: 22px;
   padding: 1.5;
-
-  /* text-align: center;  Centra el texto horizontalmente */
-  /* margin: 0 auto; /* Centra el bloque en el ancho de la página */
- /* max-width: 800px; /* Limita el ancho para mejor legibilidad */
-  /*padding: 20px;*/
 }
 
 
+/* Contenedor para dar orden a las filas de actividades */
+.container-actividades {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contenedor para cada bloque de actividad */
+.actividad-bloque {
+    display: flex;
+    flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
+    align-items: flex-start;
+    gap: 30px;
+    background: rgba(22, 27, 34, 0.85); /* Fondo oscuro profesional */
+    border: 1px solid #30363d;
+    padding: 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.actividad-bloque:hover {
+    transform: scale(1.02); 
+    border-color: #FFD700;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+}
+
+/* Títulos internos */
+.actividad-bloque h1 {
+    color: #FFD700;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+/* Columna de texto a la derecha */
+.text-info {
+    flex: 1; /* Hace que el texto use el espacio restante */
+}
+
+/* Controlar el tamaño de la imagen y el botón */
+.columna-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+}
 
 
-/*
+img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border: 1px solid #FFD700;
+    border-radius: 8px;
+    /* Transición suave para el brillo */
+    filter: grayscale(30%);
+    transition: filter 0.3s ease;
+}
+
+.actividad-bloque:hover img {
+    filter: grayscale(0%);
+}
+
+/* Mejorar el párrafo */
 p {
-  color: #FFD700;
-  line-height: 2.0;
-  font-family: 'Merriweather', serif;
-  font-size: 20px;  
-  text-align: center; /* Centra el texto horizontalmente */
-  /*
-  margin: 0 auto;  /* Centra el bloque en el ancho de la página */
- /* max-width: 800px; /* Limita el ancho para mejor legibilidad */
- /* padding: 20px;
+    border-left: 3px solid #FFD700;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
 }
 
-p {
-  color: #FFFFFF; /* Amarillo dorado 
-  font-family: 'Merriweather', sans-serif;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: #001F3F;
-  padding: 10px;
-  border-radius: 5px;
-  transition: color 0.3s ease, transform 0.2s ease;
+.footer-actions {
+    margin-top: 60px; /* Más espacio */
+    margin-bottom: 40px;
+    text-align: center;
 }
 
-p:hover {
-  color: #FFFFFF; /* Cambia a blanco al pasar el mouse */
-  /*transform: scale(1.05); */
-}
-
-
-
-
-
-
-*/
-/* Contenedor para centrar verticalmente */
-.contenedor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+@keyframes iluminarVerde {
+  from {
+    text-shadow: 0 0 5px #00FF41, 0 0 10px #00FF41;
+  }
+  to {
+    text-shadow: 0 0 15px #00FF41, 0 0 30px #00FF41, 0 0 45px #00FF41;
+  }
 }
