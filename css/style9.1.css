@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), 
+                url('../Recursos_Graficos/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #e6edf3;
+    /* Mejora el scroll */
+    backface-visibility: hidden;
+}
+
+h1 {
+    color: #FFD700;
+    text-align: center;
+    font-size: 3rem;
+    margin: 40px 0;
+    text-transform: uppercase;
+    /* Se añade el parpadeo */
+    animation: parpadeo 3s infinite;
+}
+/*
+h1 {
+  color: #FFFF00;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  text-shadow: 0 0 5px #FFFF00, 0 0 10px #FFFF00, 0 0 15px #FFFF00;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  transition: text-shadow 0.3s ease;
+}
+*/
+h1:hover {
+  text-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFFF00;
+}
+
+
+/* Contenedor para dar orden a las filas de actividades */
+.container-actividades {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contenedor para cada bloque de actividad */
+.actividad-bloque {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: rgba(22, 27, 34, 0.8); /* Un poco más opaco para legibilidad */
+    border: 1px solid #30363d;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.actividad-bloque:hover {
+    transform: scale(.90); /* Se agranda ligeramente */
+    border-color: #FFD700;  /* El borde se ilumina */
+}
+
+/* Títulos internos */
+.actividad-bloque h1 {
+    color: #FFD700;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+/* Controlar el tamaño de la imagen y el botón */
+.columna-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+}
+
+
+img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border: 1px solid #FFD700;
+    border-radius: 8px;
+    /* Transición suave para el brillo */
+    filter: grayscale(30%);
+    transition: filter 0.3s ease;
+}
+
+.actividad-bloque:hover img {
+    filter: grayscale(0%);
+}
+
+/* Mejorar el párrafo */
+p {
+    margin: 0;
+    flex: 1;
+    color: #FFFF00; /* Tu amarillo original */
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+    text-align: justify;
+    background: transparent; /* Quitamos el fondo individual para usar el del bloque */
+    border-left: 4px solid #FFD700;
+    padding-left: 30px;
+}
+
+.footer-actions {
+    margin-top: 60px; /* Más espacio */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+@keyframes parpadeo {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+    20%, 24%, 55% { opacity: 0; }
+}
