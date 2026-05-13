@@ -29,7 +29,7 @@ h1:hover {
 
 h2, h3 {
     color: #FFD700;
-    border-left: 5px solid #00FF41; /* El verde que ya elegiste */
+    border-left: 5px solid #00FF41; 
     padding-left: 15px;
     margin-top: 40px;
     text-transform: uppercase;
@@ -55,7 +55,7 @@ p {
     text-align: justify;
     line-height: 1.8;
     color: #e6edf3;
-    /* Añade esto para resaltar el texto sobre la imagen de fondo */
+    /* Para resaltar el texto sobre la imagen de fondo */
     background: rgba(0, 0, 0, 0.4); 
     padding: 20px;
     border-radius: 8px;
@@ -63,13 +63,14 @@ p {
 }
 
 mark {
-    background-color: #1a1a1a; /* Fondo casi negro */
-    color: #00FF41; /* Letras verdes */
-    border: 1px solid #00FF41;
-    padding: 2px 6px;
+    background-color: #000; /* Fondo negro */
+    color: #00FF41; /* Verde neón */
+   /* border: 1px solid #00FF41; /* Borde verde */
+    padding: 3px 10px;
     font-family: 'Courier New', monospace;
     font-weight: bold;
     border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.2); /* Brillo suave */
 }
 
 /* Contenedor para dar orden a las filas de actividades */
