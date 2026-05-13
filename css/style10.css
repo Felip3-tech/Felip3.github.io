@@ -1,0 +1,141 @@
+:root {
+    --neon-green: #ffff00;
+}
+body {
+    background-color: #0d1117;
+    background-image: url('../Recursos_Graficos/img31.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #c9d1d9;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #00FF41; /* Cambiado de azul al Verde para legibilidad */
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    text-shadow: 0 0 10px #00FF41, 0 0 20px rgba(0, 255, 65, 0.4); /* Resplandor neón */
+    animation: parpadeo 3s infinite; 
+}
+
+h1:hover {
+  text-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFFF00;
+}
+
+@keyframes parpadeo {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+    20%, 24%, 55% { opacity: 0; }
+}
+
+h2 {
+    color: #58a6ff; /* Azul para subtítulos */
+    text-align: left;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.note-card {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px 20px 35px 20px; /* 35px abajo para no tocar el borde */
+    height: auto; /* La tarjeta se adapta al texto largo */
+    /* Fondo oscuro con opacidad baja */
+    background: rgba(0, 0, 0, 0.35); 
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid rgba(48, 54, 61, 0.5); /* Línea divisoria sutil */
+}
+
+.note-header h2, .note-header h3 {
+    color: #58a6ff; /* El azul de tus subtítulos */
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-right: 10px; /* Despega el enlace del borde derecho */
+}
+
+.read-more {
+    color: #e6edf3;
+    font-size: 1rem; /* Aumenta ligeramente el tamaño para que sea clickeable */
+    text-decoration: none;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.read-more:hover {
+    color: #00FF41; /* Cambia a verde al pasar el mouse */
+    text-shadow: 0 0 16px #00FF41;
+}
+
+/* Distribución del contenido interno (Imagen al lado del texto) */
+.note-content {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+/* Ajuste de la imagen interna */
+.note-img {
+    max-width: 360px;
+    height: auto;
+    border: 1.5px solid #00FF22;
+    border-radius: 6px;
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+    filter: grayscale(60%);
+    transition: filter 0.3s ease;
+}
+
+/* Ajuste del párrafo para que no use el fondo negro doble */
+.note-content p {
+    background: transparent !important; /* Sin fondo */
+    padding: 0 !important;
+    margin: 0;
+    color: #ffff00;
+    border: 1.5px solid #FF002A;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+.footer-actions {
+    margin-top: 60px; /* Más espacio */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+@keyframes iluminarVerde {
+  from {
+    text-shadow: 0 0 5px #00FF41, 0 0 10px #00FF41;
+  }
+  to {
+    text-shadow: 0 0 15px #00FF41, 0 0 30px #00FF41, 0 0 45px #00FF41;
+  }
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
+    margin-top: 50px;
+}
