@@ -1,0 +1,33 @@
+header {
+  text-align: center; /* Centrado para que se vea más equilibrado en el inicio */
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+
+input[type="button"]{
+  /* TAMAÑO Y ESPACIO */
+  font-size: 24px;            /* Letra más grande */
+  padding: 18px 50px;         /* Cuerpo (arriba/abajo y lados) */
+  min-width: 180px;           /* Los elementos tengan un ancho similar */
+  margin: 10px;               /* Espacio entre botones */
+  
+/* ESTILO */
+  background-color: transparent; 
+  color: #0022FF;            
+  border: 2px solid #33FF00;  /* Borde */
+  border-radius: 50px;        /* Bordes redondeados*/
+  
+  /* INTERACCIÓN */
+  cursor: pointer;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  transition: all 0.3s ease;  /* Animación suave al pasar el mouse */
+  text-transform: uppercase;  /* Letras mayúsculas para más impacto */
+}
+
+input[type="button"]:hover {
+  background-color: #00ff88;  /* Se rellena de verde */
+  color: #000;                /* La letra cambia a negro para contraste */
+  box-shadow: 0 0 20px rgba(255, 255, 0, 0.6); /* Efecto de brillo */
+  transform: translateY(-3px); /* Animación del botón */
+}
