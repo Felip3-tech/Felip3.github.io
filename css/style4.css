@@ -61,12 +61,12 @@ img {
 p {
     margin: 0;
     flex: 1;
-    color: #FFFF00; /* Tu amarillo original */
+    color: #FFFF00; 
     line-height: 1.8;
     font-family: 'Merriweather', serif;
     font-size: 1.1rem;
     text-align: justify;
-    background: transparent; /* Quitamos el fondo individual para usar el del bloque */
+    background: transparent; /* Quita el fondo individual para usar el del bloque */
     border-left: 4px solid #FFD700;
     padding-left: 30px;
 }
